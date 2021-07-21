@@ -1,0 +1,74 @@
+.team {
+  background-color: var(--secondary-bg-color);
+  // padding: 94px 0;
+  min-width: 320px;
+  &__list {
+    // display: flex;
+    // justify-content: center;
+    margin-top: 30px;
+    // margin-left: -30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 50px;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    @media screen and (min-width: 480px) {
+      // width: 450px;
+    }
+  }
+  &__title {
+    display: block;
+    font-size: 28px;
+    line-height: 1.18;
+    @media screen and (min-width: 480px) {
+    }
+  }
+  &__name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__discr {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.card {
+  flex-basis: calc((100% / 4) - 30px);
+  // margin-left: 30px;
+  background-color: var(--primary-white-color);
+  // max-width: 270px;
+  padding-bottom: 24px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+}
